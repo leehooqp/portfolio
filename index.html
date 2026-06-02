@@ -23,7 +23,7 @@
 <nav>
 
 <div class="navbar">
-
+<div class="nav-indicator"></div>
 <div class="logo">
 Lee Hojun
 </div>
@@ -473,6 +473,83 @@ function toggleTheme(){
 document.body.classList.toggle("light");
 
 }
+const links =
+document.querySelectorAll(".nav-links a");
+
+const indicator =
+document.querySelector(".nav-indicator");
+
+function moveIndicator(link){
+
+    const rect =
+    link.getBoundingClientRect();
+
+    const navRect =
+    document.querySelector(".navbar")
+    .getBoundingClientRect();
+
+    indicator.style.left =
+    (rect.left - navRect.left - 12)
+    + "px";
+
+    indicator.style.width =
+    (rect.width + 24)
+    + "px";
+}
+
+links.forEach(link=>{
+
+    link.addEventListener(
+    "mouseenter",
+    ()=>moveIndicator(link)
+    );
+
+});
+
+moveIndicator(links[0]);
+window.addEventListener("scroll",()=>{
+
+const sections = [
+"about",
+"education",
+"skills",
+"projects",
+"experience",
+"resume",
+"career",
+"contact"
+];
+
+let current = "";
+
+sections.forEach(id=>{
+
+const section =
+document.getElementById(id);
+
+const top =
+section.offsetTop;
+
+if(window.scrollY >= top-200){
+
+current=id;
+
+}
+
+});
+
+const activeLink =
+document.querySelector(
+`a[href="#${current}"]`
+);
+
+if(activeLink){
+
+moveIndicator(activeLink);
+
+}
+
+});
 
 </script>
 
