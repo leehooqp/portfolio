@@ -72,6 +72,40 @@ nav{
   border:1px solid rgba(255,255,255,.12);
 
   box-shadow:var(--shadow);
+  position:relative;
+  
+}
+.nav-indicator{
+
+    position:absolute;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    left:145px;
+
+    width:85px;
+    height:42px;
+
+    border-radius:999px;
+
+    background:
+    rgba(255,255,255,.08);
+
+    backdrop-filter:
+    blur(40px);
+
+    border:
+    1px solid rgba(255,255,255,.15);
+
+    box-shadow:
+    0 8px 30px rgba(255,255,255,.08);
+
+    transition:
+    all .4s cubic-bezier(.22,.61,.36,1);
+
+    pointer-events:none;
 }
 
 .logo{
@@ -89,6 +123,9 @@ nav{
   text-decoration:none;
   color:var(--sub);
   transition:.3s;
+
+  position:relative;
+  z-index:10;
 }
 
 .nav-links a:hover{
