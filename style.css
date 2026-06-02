@@ -28,6 +28,7 @@ body{
     radial-gradient(circle at top right,#6f42c1 0%,transparent 35%),
     linear-gradient(135deg,#080b14,#111827);
     min-height:100vh;
+    color:#ffffff;
     color:var(--text);
 }
 
