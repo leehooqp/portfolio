@@ -1,41 +1,302 @@
+```html
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-    <title>My AI Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lee Hojun | AI Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+
 </head>
 <body>
 
-    <h1>이호준 포트폴리오</h1>
+<div class="container">
 
-    <h2>About Me</h2>
-    <p>
-        인공지능공학을 전공하고 있으며
-        Climate AI와 Deep Learning에 관심이 있습니다.
-    </p>
+<nav>
+<div class="navbar">
 
-    <h2>Education</h2>
-    <ul>
-        <li>조선대학교</li>
-        <li>인공지능공학과</li>
-    </ul>
+<div class="logo">
+Lee Hojun
+</div>
 
-    <h2>Skills</h2>
-    <ul>
-        <li>Python</li>
-        <li>PyTorch</li>
-        <li>GitHub</li>
-    </ul>
+<div class="nav-links">
+<a href="#about">About</a>
+<a href="#education">Education</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#experience">Experience</a>
+<a href="#contact">Contact</a>
+</div>
 
-    <h2>Projects</h2>
-    <ul>
-        <li>ClimODE 재현 연구</li>
-        <li>ClimODE + PASSAT 연구</li>
-    </ul>
+<button class="toggle" onclick="toggleTheme()">
+🌙
+</button>
 
-    <h2>Contact</h2>
-    <p>
-        GitHub: leehooqp
-    </p>
+</div>
+</nav>
+
+<section class="hero">
+
+<div class="hero-card">
+
+<div>
+<img src="profile.jpg" class="profile">
+</div>
+
+<div class="hero-text">
+
+<h1>Lee Hojun</h1>
+
+<h2>AI Engineering Student</h2>
+
+<p>
+조선대학교 AI소프트웨어융합과 인공지능공학전공 3학년에 재학 중입니다.
+
+Deep Learning과 Scientific AI 분야에 관심이 있으며,
+기후 예측 모델과 Neural ODE 기반 연구를 공부하고 있습니다.
+
+AI 연구자 및 AI 엔지니어로 성장하는 것을 목표로 하고 있습니다.
+</p>
+
+<div class="btns">
+
+<a href="#projects" class="btn">
+View Projects
+</a>
+
+<a href="#" class="glass-btn">
+Resume (Coming Soon)
+</a>
+
+<a href="https://github.com/leehooqp"
+target="_blank"
+class="glass-btn">
+GitHub
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="section-title">
+About Me
+</h2>
+
+<div class="glass">
+
+<p>
+인공지능공학을 전공하며 Deep Learning,
+Climate Forecasting,
+Scientific Machine Learning에 관심을 가지고 있습니다.
+
+최근에는 ClimODE와 PASSAT 논문을 분석하며
+기후 예측 AI 연구를 진행하고 있습니다.
+</p>
+
+</div>
+
+</section>
+
+<section id="education">
+
+<h2 class="section-title">
+Education
+</h2>
+
+<div class="glass">
+
+<h3>Chosun University</h3>
+
+<br>
+
+<p>
+Department of AI Software Convergence
+</p>
+
+<p>
+Major in Artificial Intelligence Engineering
+</p>
+
+<p>
+3rd Year Undergraduate Student
+</p>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="section-title">
+Skills
+</h2>
+
+<div class="glass skills">
+
+<div class="skill">
+<p>Python</p>
+<div class="bar">
+<div class="fill" style="width:90%"></div>
+</div>
+</div>
+
+<div class="skill">
+<p>PyTorch</p>
+<div class="bar">
+<div class="fill" style="width:85%"></div>
+</div>
+</div>
+
+<div class="skill">
+<p>Deep Learning</p>
+<div class="bar">
+<div class="fill" style="width:80%"></div>
+</div>
+</div>
+
+<div class="skill">
+<p>Git / GitHub</p>
+<div class="bar">
+<div class="fill" style="width:75%"></div>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="section-title">
+Projects
+</h2>
+
+<div class="projects">
+
+<div class="project-card">
+
+<h3>
+Climate Forecasting Model Study
+</h3>
+
+<p>
+ClimODE 논문 분석 및 Neural ODE 기반
+기후 예측 모델 연구.
+
+ERA5 데이터셋과 물리 기반 AI 모델을 학습 중.
+</p>
+
+</div>
+
+<div class="project-card">
+
+<h3>
+DACON AI Competition
+</h3>
+
+<p>
+DACON AI 대회 참가.
+
+데이터 전처리,
+모델 학습,
+성능 검증 경험 보유.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="experience">
+
+<h2 class="section-title">
+Experience
+</h2>
+
+<div class="glass">
+
+<ul>
+
+<li>DACON AI Competition Participant</li>
+
+<br>
+
+<li>Climate AI Research Study</li>
+
+<br>
+
+<li>Deep Learning Self-Directed Research</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">
+Contact
+</h2>
+
+<div class="contact-grid">
+
+<div class="glass contact-card">
+
+<h3>Email</h3>
+
+<br>
+
+<p>
+leehoal@naver.com
+</p>
+
+</div>
+
+<div class="glass contact-card">
+
+<h3>GitHub</h3>
+
+<br>
+
+<p>
+github.com/leehooqp
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Lee Hojun
+
+</footer>
+
+</div>
+
+<script>
+
+function toggleTheme(){
+
+document.body.classList.toggle("light");
+
+}
+
+</script>
 
 </body>
 </html>
+```
